@@ -1,0 +1,50 @@
+@media only screen and  (max-width: 600px) {
+
+    // #navbar{
+    //     height:300px;
+    //     width: 100%;
+    //     background-color: chartreuse;
+    //     ul{
+    //         display: block;
+    //         text-align: center;
+    //         li{
+    //         padding: 10px;
+
+    //         }
+    //     }
+
+    // }
+
+    #section1{
+        height: 200px;
+        width: 100%;
+        .sp1{
+            font-size: xx-large;
+            top: 20%;
+        }
+        .sp2{
+            display: none;
+        }
+    }
+    #icon{
+        display: none;
+    }
+    #dwon-btn{
+        display: none;
+    }
+    
+}
+#section2{
+    .text-img{
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        .text{
+            font-size: xx-large;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+#section3 ,#footer{
+    display: none;
+}

@@ -1,0 +1,23 @@
+#navbar {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+  position: sticky;
+  top: 0px;
+  z-index: 10; }
+  #navbar ul {
+    list-style-type: none;
+    display: flex;
+    padding: 10px; }
+    #navbar ul li a {
+      font-size: x-large;
+      color: white;
+      padding: 30px;
+      text-decoration: none; }
+      #navbar ul li a:hover {
+        background-color: red; }
+    #navbar ul .login {
+      margin-left: 650px; }
+
+/*# sourceMappingURL=navbar.css.map */

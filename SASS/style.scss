@@ -1,0 +1,139 @@
+@import "navbar";
+@import "icon";
+@import "aboutus";
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+$color :blue;
+ @mixin heading{
+    font-size: 30px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration: underline solid $color;
+    padding: 10px;
+    text-transform: uppercase;
+ }
+::selection{
+    background-color: yellow;
+    color: black;
+}
+#section1{
+    height:700px;
+    width: 100%;
+    background-image:linear-gradient(black , rgba(0, 0, 255, 0.466)), url("../img/a.jfif");
+    background-size: cover;  
+
+    .sp1{
+        position:absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size:80px;
+        font-weight: 300;
+        text-transform: capitalize;
+        color: white;
+    }
+    .sp2{
+        @extend .sp1;
+        top: 60%;
+        font-size: 25px;
+        text-align: justify;
+    }      
+}
+#section2{
+    height:800px;
+    width: 100%;
+    #aboutus{
+        height:500px ;
+        width:90%;
+        position: relative;
+        left: 5%;
+        top: 5%;
+        .heading{
+            @include heading;     }
+        .text-img{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            .text{
+                font-size:large;
+                width: 50%;
+                padding: 50px;
+                text-align: justify;
+                margin-top: 120px;
+                color: gray;
+                line-height: 30px;
+                word-spacing: 3px;
+            }
+            .img{
+                height:100%;
+                width: 50%;
+                img{
+                    height:60%;
+                    width: 80%;
+                    padding: 50px;
+                    
+                }
+            }
+        }
+    }
+}
+#section3{
+    @extend #section2;
+    // border: 3px solid chartreuse;
+    #service{
+        box-sizing: border-box;
+        
+        .heading{
+            @include heading;
+        }
+        .service-item{
+            @extend #aboutus;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 100px;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+
+            .item{
+                height:45%;
+                width:28%;
+                // background-color: chartreuse;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            .one{
+                h2{
+                    text-decoration: underline solid $color;
+                    text-transform: uppercase;
+                    margin: 20px;
+                    color: blueviolet;
+                }
+                span{
+                  text-align: justify;
+                  font-size: large;
+                  color: darkcyan;
+                }
+            }
+            .two,.three,.four,.five,.six{
+                @extend .one;
+            }
+        }
+    }
+}
+#footer{
+    height:50px;
+    width: 100%;
+    background-color: rgb(19, 16, 54);
+    text-align: center;
+    a{
+        color: white;
+        text-decoration: none;
+        font-size: xx-large;
+    }
+}

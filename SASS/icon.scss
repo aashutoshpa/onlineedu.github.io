@@ -1,0 +1,66 @@
+#icon{
+    height:auto;
+    width:50px;
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    // margin-top: 200px;
+    position: fixed;
+    top: 30%;
+
+    i{
+        font-size: xx-large;
+        color: white;
+        text-align: center;
+        border: 1px solid white;
+        padding: 10px;
+        cursor: pointer;
+    }
+    i:nth-child(1){
+        background-color: blue;
+    }
+    i:nth-child(2){
+        background-color: green;
+    }
+    i:nth-child(3){
+        background-image: radial-gradient(rgba(255, 0, 0, 0.671),rgba(255, 255, 0, 0.74));
+    }
+    i:nth-child(4){
+        background-color: red;
+    }
+}
+
+#dwon-btn{
+    font-size:50px;
+    color: white;
+    position: relative;
+    // bottom: 0;
+    top: 85%;
+    left:96%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    animation-name: btnanm;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+   
+    &:hover{
+      animation-play-state: paused;
+    }
+
+    @keyframes btnanm {
+        0%{
+            top: 85%;
+        }
+        50%{
+            top: 87%;
+        }
+        75%{
+            top: 87%;
+        }
+        100%{
+            top: 85%;                
+        }
+        
+    }
+}

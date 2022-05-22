@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="1580x1580" href="img/fabicon.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fabicon.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fabicon.jpg">
+    <link rel="manifest" href="img/fabicon.jpg">
+    <link rel="mask-icon" href="img/fabicon.jpg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>online Educator</title>
+    <link rel="stylesheet" href="SASS/style.css">
+    <link rel="stylesheet" href="SASS/form.css">
+    <script src="js/form.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/icon_clicked.js"></script>
+    <script src="js/scrollpage.js"></script>
+    <script src="js/reload.js"></script>
+    <script src="localstorage/userInfo.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <ul>
+            <li onclick="reload()"><a href="#">Home</a></li>
+            <li><a href="#section2">About</a></li>
+            <li><a href="mailto:onlineeducator@gmail.com">Contact</a></li>
+            <li><a href="#section3">Services</a></li>
+            <li><a href="#" onclick="open_newsWindow()">News</a></li>
+            <li class="login" onclick="open_form()"><a href="#">Login</a></li>
+        </ul>
+    </div>
+    <div id="section1">
+        <span class="sp1">WE educate here.......</span>
+        <span class="sp2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vero minima magni sed autem id
+            molestiae voluptatem minus officia dolorem delectus quaerat eligendi laborum perspiciatis placeat harum
+            odio, iure doloribus!</span>
+        <span id="icon">
+            <i class="fa fa-facebook-f" onclick="open_facebook()"></i>
+            <i class="fa fa-whatsapp" onclick="open_whatsapp()"></i>
+            <i class="fa fa-instagram" onclick="open_insta()"></i>
+            <i class="fa fa-youtube" onclick="open_youtube()"></i>
+        </span>
+        <i class="fa fa-chevron-circle-down" id="dwon-btn" onclick="scrollPage()"></i>
+    </div>
+
+    <div id="section2">
+        <div id="aboutus">
+            <div class="heading">About Us</div>
+            <div class="text-img">
+                <span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In alias consequuntur atque
+                    dicta, minus deleniti ducimus quas, doloribus architecto dolores maxime omnis tempore maiores
+                    mollitia accusantium amet? Dolores nulla eveniet quae dolore beatae modi velit explicabo in minima
+                    voluptatibus exercitationem alias mollitia officiis, adipisci veritatis iusto doloribus vero
+                    temporibus ipsam?
+
+
+
+                    <b style="color: blue;">........Owner</b>
+                </span>
+                <span class="img">
+                    <img src="./img/g.png" alt="error image not found...">
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div id="section3">
+        <div id="service">
+            <div class="heading">Services</div>
+            <div class="service-item">
+                <div class="item one">
+                    <h2>Web development</h2>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla qui veritatis necessitatibus id
+                        quidem dolorum deleniti distinctio doloribus nisi magnam, culpa optio magni aperiam commodi
+                        natus provident sed deserunt? Quidem, labore distinctio! Soluta excepturi vitae quidem rem
+                        officiis ea culpa et aut labore nobis iste veniam, eius voluptas debitis eos?
+                    </span>
+                </div>
+                <div class="item two">
+                    <h2>android development</h2>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla qui veritatis necessitatibus id
+                        quidem dolorum deleniti distinctio doloribus nisi magnam, culpa optio magni aperiam commodi
+                        natus provident sed deserunt? Quidem, labore distinctio! Soluta excepturi vitae quidem rem
+                        officiis ea culpa et aut labore nobis iste veniam, eius voluptas debitis eos?
+                    </span>
+                </div>
+                <div class="item three">
+                    <h2>Hosting</h2>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla qui veritatis necessitatibus id
+                        quidem dolorum deleniti distinctio doloribus nisi magnam, culpa optio magni aperiam commodi
+                        natus provident sed deserunt? Quidem, labore distinctio! Soluta excepturi vitae quidem rem
+                        officiis ea culpa et aut labore nobis iste veniam, eius voluptas debitis eos?
+                    </span>
+                </div>
+
+                <div class="item four">
+                    <h2>Hacking</h2>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla qui veritatis necessitatibus id
+                        quidem dolorum deleniti distinctio doloribus nisi magnam, culpa optio magni aperiam commodi
+                        natus provident sed deserunt? Quidem, labore distinctio! Soluta excepturi vitae quidem rem
+                        officiis ea culpa et aut labore nobis iste veniam, eius voluptas debitis eos?
+                    </span>
+                </div>
+
+                <div class="item five">
+                    <h2>BRANDING</h2>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla qui veritatis necessitatibus id
+                        quidem dolorum deleniti distinctio doloribus nisi magnam, culpa optio magni aperiam commodi
+                        natus provident sed deserunt? Quidem, labore distinctio! Soluta excepturi vitae quidem rem
+                        officiis ea culpa et aut labore nobis iste veniam, eius voluptas debitis eos?
+                    </span>
+                </div>
+
+                <div class="item six">
+                    <h2>Photography</h2>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla qui veritatis necessitatibus id
+                        quidem dolorum deleniti distinctio doloribus nisi magnam, culpa optio magni aperiam commodi
+                        natus provident sed deserunt? Quidem, labore distinctio! Soluta excepturi vitae quidem rem
+                        officiis ea culpa et aut labore nobis iste veniam, eius voluptas debitis eos?
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer">
+        <a href="#">&copy; Ashutosh Pandey 2021</a>
+    </div>
+
+
+    <!-- ---------------login form----------------------------- -->
+
+    <div id="form-container">
+        <div class="top">
+            <div id="form-heading">
+                <h1 id="l-text">login</h1>
+            </div>
+            <div id="top-btn">
+                <button id="login-btn" class="active" onclick="login()">login </button>
+                <button id="sign-btn" onclick="signup()">Sign Up</button>
+            </div>
+        </div>
+        <div class="bottom">
+
+            <form action="../SASS.txt" method="post" autocomplete="off" onsubmit="UserData()">
+                <div id="login-form-container">
+
+                    <div class="field-form">
+                        <div class="field-box">
+                            <span>E-mail : </span>
+                            <span><input type="email" name="email" id="email" placeholder="Enter Your Email i'd"
+                                    autofocus></span>
+
+
+                        </div>
+
+                        <div class="field-box">
+                            <span>Password :</span>
+                            <span><input type="password" name="password" id="password"
+                                    placeholder="Enter Your Password"></span>
+
+                        </div>
+
+                        <div class="field-box">
+                            <span> Confirm Password :</span>
+                            <span><input type="password" name="password" id="password"
+                                    placeholder="Confirm Password"></span>
+
+                        </div>
+
+                        <input type="submit" value="Login" id="final-btn">
+
+
+                    </div>
+
+                </div>
+                <div id="sign-up-form-container">
+                    <div class="field-form">
+                        <div class="field-box">
+                            <span>Name :</span>
+                            <span>
+                                <input type="text" id="u_name" name="u_name" placeholder="Enter your name">
+                            </span>
+                        </div>
+                        <div class="field-box">
+                            <span>E-mail:</span>
+                            <span>
+                                <input type="email" id="u_mail" name="u_mail" placeholder="Enter your name">
+                            </span>
+                        </div>
+
+
+                        <div class="field-box">
+                            <span>Password :</span>
+                            <span><input type="password" name="u_password" id="u_password"
+                                    placeholder="Enter Your Password"></span>
+
+                        </div>
+
+                        <div class="field-box">
+                            <span> Confirm Password :</span>
+                            <span><input type="password" name="u_password" id="u_password"
+                                    placeholder="Confirm Password"></span>
+
+                        </div>
+                        <input type="submit" value="ok" id="sign-up-btn" >
+                    </div>
+                </div>
+            </form>
+        </div>
+        <span id="close-form" title="close" onclick="close_form()">&cross;</span>
+    </div>
+</body>
+
+</html>

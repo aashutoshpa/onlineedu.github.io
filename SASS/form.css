@@ -1,0 +1,176 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+
+#form-container{
+    height: auto;
+    width: 100%;
+    background-color: rgb(11, 11, 27);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50px;
+    display: none;
+}
+.top{
+    height:150px;
+    width: 100%;
+    /* background-color: red; */
+}
+.bottom{
+    height: 550px;
+    width: 100%;
+    /* background-color: yellow; */
+}
+#form-heading,#top-btn{
+    /* border: 3px solid blue; */
+    width:300px;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+    left:40%;
+    margin: 10px;
+}
+#form-heading{
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+}
+#top-btn{
+    width:310px ;
+}
+#login-btn,#sign-btn{
+    height:50px;
+    width:150px;
+    font-size: x-large;
+    text-transform: capitalize;
+    border-radius: 100px;
+    box-shadow: 0 20px 10px 4px rgba(0, 0, 0, 0.5);
+    border: none;
+    font-variant: small-caps;
+    cursor: pointer;
+}
+#login-btn{
+    background-color: red;
+    color: white;
+}
+#login-form-container{
+    height: 450px;
+    width:80%;
+    background-image: linear-gradient( to bottom right, white 50%,rgb(0, 0, 255) 10%);
+    /* background-color: red; */
+   position: absolute;
+   top: 60%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+    
+   
+}
+
+.field-form{
+    width:50%;
+    /* background-color: yellow; */
+    margin: 15px 0 10px 250px ;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    box-sizing: border-box;
+}
+
+.field-box{
+    /* border: 3px solid blue; */
+    height: auto;
+    width: auto;
+    margin:20px 8px;
+}
+.field-box span{
+    font-size: x-large;
+    color: black;
+    text-transform: capitalize;
+}
+.field-box span input{
+    height:40px;
+    width:100%;
+    font-size:large;
+    text-indent: 5px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(2, 2, 48);
+}
+.field-box span input:focus{
+    border: 1px solid rgb(2, 2, 48);
+}
+#final-btn{
+    /* position:absolute;
+    top:85%;
+    left:60%; */
+    height:40px;
+    width: 150px;
+    /* background-color:red ; */
+    outline: none;
+    border: none;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+    margin-left:30%;
+    margin-top: 8%;  
+    font-size: x-large;
+    color: rgb(246, 246, 252);
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+}
+#final-btn:hover{
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+#final-btn:active{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+ #sign-up-form-container{
+
+    height: 450px;
+    width:80%;
+    background-image: linear-gradient( to bottom right, white 50%,rgb(0, 0, 255) 10%);
+    /* background-color: red; */
+   position: absolute;
+   top: 60%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   z-index: -1;
+} 
+#sign-up-btn{
+   height: 40px;
+   width: 100px;
+   font-size: x-large;
+   margin-top: auto;
+   margin-left:80%;
+   background-color: transparent;
+   outline: none;
+   border: none;
+   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+   font-weight: bold;
+   color: white;
+   text-align: center;
+   cursor: pointer;
+}
+#sign-up-btn:hover{
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+#sign-up-btn:active{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+#close-form{
+    width: 50px;
+    height: 50px;
+    color: white;
+    position: absolute;
+    top: 0;
+    right:0;
+    /* background-color: yellow; */
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    border-radius: 100px;
+    cursor: pointer;
+}

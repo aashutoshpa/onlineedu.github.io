@@ -1,0 +1,27 @@
+@media only screen and (max-width: 600px) {
+  #section1 {
+    height: 200px;
+    width: 100%; }
+    #section1 .sp1 {
+      font-size: xx-large;
+      top: 20%; }
+    #section1 .sp2 {
+      display: none; }
+
+  #icon {
+    display: none; }
+
+  #dwon-btn {
+    display: none; } }
+#section2 .text-img {
+  flex-wrap: wrap;
+  flex-direction: row-reverse; }
+  #section2 .text-img .text {
+    font-size: xx-large;
+    width: 100%;
+    text-align: center; }
+
+#section3, #footer {
+  display: none; }
+
+/*# sourceMappingURL=responsive.css.map */
